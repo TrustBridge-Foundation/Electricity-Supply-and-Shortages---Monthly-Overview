@@ -1,4 +1,4 @@
-# Monthly Indian Power-Sector Overview
+# Electricity Supply and Shortages: Monthly Overview of Indian Power Sector
 
 Automated pipeline that downloads a month of Indian power-sector data from public sources, consolidates it into monthly panels, and generates 15 graphs covering demand, shortages, generation mix, capacity utilization, ancillary services, wind and solar curtailment, IEX market outcomes, and a 15-minute comparison of the highest- and lowest-demand days of the month.
 
