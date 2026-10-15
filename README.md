@@ -1,6 +1,6 @@
 # Monthly Indian Power-Sector Overview
 
-Automated pipeline that downloads a month of Indian power-sector data from public sources, consolidates it into monthly panels, and generates 14 charts covering demand, shortages, generation mix, capacity utilization, ancillary services, wind and solar curtailment, IEX market outcomes, and a 15-minute comparison of the highest- and lowest-demand days of the month.
+Automated pipeline that downloads a month of Indian power-sector data from public sources, consolidates it into monthly panels, and generates 15 graphs covering demand, shortages, generation mix, capacity utilization, ancillary services, wind and solar curtailment, IEX market outcomes, and a 15-minute comparison of the highest- and lowest-demand days of the month.
 
 ## Charts
 
@@ -9,7 +9,7 @@ Automated pipeline that downloads a month of Indian power-sector data from publi
 - Demand required, met and shortages
 - Solar and non-solar peak demand, with shortages during solar and non-solar peak hours
 - Source-wise generation
-- Generation outages (optional, off by default; see Usage)
+- Generation outages
 - Capacity utilisation of thermal, nuclear and hydro plants
 - SRAS and TRAS
   - Up procurement
@@ -24,7 +24,7 @@ Automated pipeline that downloads a month of Indian power-sector data from publi
 
 The two days are chosen automatically: the day of highest and the day of lowest all-India electricity requirement in the month, where requirement = energy met + energy shortage (MU).
 
-- Source-wise generation by 15-minute block, with storage charging and net load, one panel per day
+- Source-wise generation by 15-minute block, one panel per day
 - IEX bids, market clearing volume and price (MCP) by 15-minute block, one chart each for DAM, RTM and HP-DAM
 
 A summary workbook also compares the two days: peak and minimum demand with their times, load factor, net-load ramps, solar and wind energy, wind + solar share, thermal range, storage use, and grid frequency statistics.
@@ -107,10 +107,10 @@ Monthly_Graphs/          output charts and summary tables, one subfolder per mon
 
 - **Requirement** is energy met plus energy shortage, in MU (1 MU = 1 GWh).
 - **Net load** is demand met minus wind minus solar. Grid-India's demand met includes storage load (pumping and battery charging), so net load does too.
-- **Price ceilings** used for the ceiling hit-rate: Rs 10/kWh for DAM and RTM, Rs 20/kWh for HP-DAM.
+- **Price ceilings** used for the ceiling hit-rate: Rs 10/kWh for DAM and RTM, Rs 20/kWh for HP-DAM. To note, price ceilings on DAM and RTM before March 203 was Rs 12/kWh.
 - 15-minute PSP values are instantaneous SCADA readings. Energy integrated from them can differ slightly from the energy reported in the PSP summary.
 - All data are taken as published. Grid-India SCADA data can contain telemetry errors, and some reports are published with a delay, so recent days may be missing.
 
 ## Acknowledgement
 
-We thank Aryan Anand for his contributions during the initial stages of developing this code.
+We thank Aryan Anand and Akshat Shukla for their contributions during the initial stages of developing this code.
