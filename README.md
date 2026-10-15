@@ -107,7 +107,7 @@ Monthly_Graphs/          output charts and summary tables, one subfolder per mon
 
 - **Requirement** is energy met plus energy shortage, in MU (1 MU = 1 GWh).
 - **Net load** is demand met minus wind minus solar. Grid-India's demand met includes storage load (pumping and battery charging), so net load does too.
-- **Price ceilings** used for the ceiling hit-rate: Rs 10/kWh for DAM and RTM, Rs 20/kWh for HP-DAM. To note, price ceilings on DAM and RTM before March 203 was Rs 12/kWh.
+- **Price ceilings** used for the ceiling hit-rate: Rs 10/kWh for DAM and RTM, Rs 20/kWh for HP-DAM. To note, price ceilings on DAM and RTM before April 2023 was Rs 12/kWh.
 - 15-minute PSP values are instantaneous SCADA readings. Energy integrated from them can differ slightly from the energy reported in the PSP summary.
 - All data are taken as published. Grid-India SCADA data can contain telemetry errors, and some reports are published with a delay, so recent days may be missing.
 
