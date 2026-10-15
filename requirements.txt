@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+requests
+beautifulsoup4
+lxml
+openpyxl
+xlrd
+pdfplumber
+selenium
+webdriver-manager
