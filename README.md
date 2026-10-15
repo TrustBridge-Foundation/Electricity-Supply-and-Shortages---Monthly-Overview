@@ -85,8 +85,6 @@ With `DOWNLOAD = True` the run first downloads and consolidates the month's data
 
 Before plotting, `main.py` prints one line per input file (`OK` or `MISSING`). A missing file makes the chart that needs it fail, except for the VRE chart, which is skipped with a message.
 
-The generation-outages chart is off by default. To get it (15 charts in total), uncomment `plot_generation_outages(PSP_PATH)` in Step 3 of `main.py`.
-
 ## Output
 
 All data and charts are written relative to the script's directory:
